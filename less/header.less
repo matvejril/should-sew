@@ -1,0 +1,128 @@
+.header {
+  position: relative;
+  padding: 10px 0;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo_md {
+  display: block;
+}
+.logo_sm {
+  display: none;
+}
+.header-nav-bar {
+  width: calc(~'100% - 235px');
+  min-width: 940px;
+  &__toggle {
+    display: none;
+    padding: 5px;
+    margin-right: -5px;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header-nav {
+  margin-top: -2px;
+  display: inline-block;
+  &:hover {
+    cursor: default;
+  }
+  a {
+    color: #0b4747;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-color: #0b4747;
+    }
+  }
+  li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 19px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.header-actions {
+  display: inline-block;
+  a {
+    margin-right: 45px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__phone {
+    color: #646464;
+  }
+  &__calculate {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 25px
+  }
+}
+
+@media all and (max-width: 1180px) {
+  .header {
+    padding: 20px 0 10px 0;
+  }
+  .header-nav-bar {
+    min-width: auto;
+    width: auto;
+    margin-top: 0;
+    &__toggle {
+      display: block;
+    }
+    &__main {
+      background-color: #ffffff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      display: none;
+      z-index: 1;
+      text-align: right;
+      padding: 20px 10px 15px 10px;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0px 0.1rem 0.5rem -0.1rem rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0.1rem 0.5rem -0.1rem rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0.1rem 0.5rem -0.1rem rgba(0, 0, 0, 0.75);
+    }
+  }
+  .header-nav {
+    width: 100%;
+    li  {
+      width: 100%;
+      margin: 2px 0;
+      text-align: center;
+      &:first-child {
+        margin: 0;
+      }
+    }
+    a {
+      border: none;
+      font-size: 21px;
+    }
+  }
+  .header-actions {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .logo_md {
+    display: none;
+  }
+  .logo_sm {
+    display: block;
+  }
+}

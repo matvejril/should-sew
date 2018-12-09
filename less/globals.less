@@ -1,0 +1,67 @@
+body, html {
+  font-family: "PT-Sans-Regular", sans-serif;
+  font-size: 18px;
+  color: #323232;
+}
+
+a, button{
+  text-decoration: none;
+  font-family: "PT-Sans-Regular", sans-serif;
+  &:hover {
+    cursor: pointer;
+  }
+}
+h2 {
+  color: #323232;
+}
+h3, h4, h5 {
+  color: #0B4747;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 500;
+}
+h2 {
+  font-size: 64px;
+  line-height: 1;
+}
+h3 {
+  font-size: 36px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media all and (max-width: 767px) {
+  body, html {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+.btn-violet {
+  border: 1px solid #b43190;
+  color: #ffffff;
+  background-color: #b43190;
+  outline: none;
+  transition: color 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  &:hover {
+    border: 1px solid #b43190;;
+    color: #b43190;
+    background-color: transparent;
+  }
+}
