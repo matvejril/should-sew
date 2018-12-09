@@ -249,17 +249,24 @@
   .our-advantages-list__actions {
     display: block;
     position: absolute;
-    right: -3px;
-    top: -56px;
+    right: -13px;
+    top: -61px;
     a {
       display: inline-block;
       vertical-align: middle;
+      padding: 5px 10px;
+      &.slick-disabled {
+        opacity: 0.5;
+        &:hover {
+          cursor: default;
+        }
+      }
       i {
         display: block;
       }
     }
     .prev {
-      margin-right: 45px;
+      margin-right: 20px;
       i:before {
         transform: rotate(180deg);
       }
@@ -296,17 +303,24 @@
   .our-clients-list__actions {
     display: block;
     position: absolute;
-    right: -3px;
-    top: -49px;
+    right: -13px;
+    top: -54px;
     a {
+      padding: 5px 10px;
       display: inline-block;
       vertical-align: middle;
+      &.slick-disabled {
+        opacity: 0.5;
+        &:hover {
+          cursor: default;
+        }
+      }
       i {
         display: block;
       }
     }
     .prev {
-      margin-right: 45px;
+      margin-right: 20px;
       i:before {
         transform: rotate(180deg);
       }

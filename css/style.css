@@ -3519,18 +3519,25 @@ ul {
   .our-advantages-list__actions {
     display: block;
     position: absolute;
-    right: -3px;
-    top: -56px;
+    right: -13px;
+    top: -61px;
   }
   .our-advantages-list__actions a {
     display: inline-block;
     vertical-align: middle;
+    padding: 5px 10px;
+  }
+  .our-advantages-list__actions a.slick-disabled {
+    opacity: 0.5;
+  }
+  .our-advantages-list__actions a.slick-disabled:hover {
+    cursor: default;
   }
   .our-advantages-list__actions a i {
     display: block;
   }
   .our-advantages-list__actions .prev {
-    margin-right: 45px;
+    margin-right: 20px;
   }
   .our-advantages-list__actions .prev i:before {
     transform: rotate(180deg);
@@ -3560,18 +3567,25 @@ ul {
   .our-clients-list__actions {
     display: block;
     position: absolute;
-    right: -3px;
-    top: -49px;
+    right: -13px;
+    top: -54px;
   }
   .our-clients-list__actions a {
+    padding: 5px 10px;
     display: inline-block;
     vertical-align: middle;
+  }
+  .our-clients-list__actions a.slick-disabled {
+    opacity: 0.5;
+  }
+  .our-clients-list__actions a.slick-disabled:hover {
+    cursor: default;
   }
   .our-clients-list__actions a i {
     display: block;
   }
   .our-clients-list__actions .prev {
-    margin-right: 45px;
+    margin-right: 20px;
   }
   .our-clients-list__actions .prev i:before {
     transform: rotate(180deg);
